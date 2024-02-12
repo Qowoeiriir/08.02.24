@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world!</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <div class="wrap">
+        <h1 class="title">Registration</h1>
+        <form action="" class="form" name="registration"
+        onsubmit="subm()">
+            <div class="input-block">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="input">
+                
+            </div>
+            <div class="input-block">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input" name="email" tabindex="1">
+                <div class="error"></div>
+            </div>
+            <div class="input-bloock">
+                <label for="about">My City</label>
+                <select name="town" id="town" class="input">
+                    <option value="">Выберите свой город</option>
+                    <option value="1">Moskov</option>
+                    <option value="2">Kazan</option>
+                    <option value="3">Blagovetchensk</option>
+                </select>
+            </div>
+            <div class="input2-block">
+                <input type="radio" id="gir" class="input">
+                <label for="girl">Girl</label>
+            </div>
+            <div class="input2-block">
+                <input type="radio" id="boy" class="input">
+                <label for="boy">Boy</label>
+            </div>
+            <div class="input2-block">
+                <input type="checkbox" id="agree" class="input">
+                <label for="agree">Согласен на обработку данных</label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    
+
+
+    <script src="./main.js"></script>
+</body>
+</html>  

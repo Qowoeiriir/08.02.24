@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world!</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <div class="wrap">
+        <select id="genres">
+            <option value="rock">Рок</option>
+            <option value="blues">Блюз</option>
+            <option value="classic">Классика</option>
+        </select>
+
+        <ul>
+            <li>Кликните на div ниже, чтобы отредактировать текст.</li>
+            <li>Нажатие на Enter или потеря фокуса с ввода сохранят содержимое.</li>
+          </ul>
+        
+        
+          <div id="view" class="view" tabindex="1">Текст</div>
+    </div>
+<div class="wrap">
+  <p>Кликните на ячейку таблицы, чтобы редактировать её. Нажмите ОК или ОТМЕНА, когда закончите.</p>
+    
+  <table id="bagua-table">
+      <tr>
+        <th colspan="3">Квадрат <em>Bagua</em>: Направление, Элемент, Цвет, Значение</th>
+      </tr>
+      <tr>
+        <td class="nw"><strong>Северо-Запад</strong>
+          <br>Металл
+          <br>Серебро
+          <br>Старейшины
+        </td>
+        <td class="n"><strong>Север</strong>
+          <br>Вода
+          <br>Синий
+          <br>Перемены
+        </td>
+        <td class="ne"><strong>Северо-Восток</strong>
+          <br>Земля
+          <br>Жёлтый
+          <br>Направление
+        </td>
+      </tr>
+      <tr>
+        <td class="w"><strong>Запад</strong>
+          <br>Металл
+          <br>Золото
+          <br>Молодость
+        </td>
+        <td class="c"><strong>Центр</strong>
+          <br>Всё
+          <br>Пурпурный
+          <br>Гармония
+        </td>
+        <td class="e"><strong>Восток</strong>
+          <br>Дерево
+          <br>Синий
+          <br>Будущее
+        </td>
+      </tr>
+      <tr>
+        <td class="sw"><strong>Юго-Запад</strong>
+          <br>Земля
+          <br>Коричневый
+          <br>Спокойствие
+        </td>
+        <td class="s"><strong>Юг</strong>
+          <br>Огонь
+          <br>Оранжевый
+          <br>Слава
+        </td>
+        <td class="se"><strong>Юго-Восток</strong>
+          <br>Дерево
+          <br>Зеленый
+          <br>Роман
+        </td>
+      </tr>
+  
+  </table>
+</div>
+
+    
+
+
+<div class="wrap">
+  <h1>Депозитный калькулятор.</h1>
+  <form name="calculator">
+    <table>
+      <tr>
+        <td>Первоначальный депозит</td>
+        <td>
+          <input name="money" type="number" value="10000" required>
+        </td>
+      </tr>
+      <tr>
+        <td>Срок вклада?</td>
+        <td>
+          <select name="months">
+            <option value="3">3 месяца</option>
+            <option value="6">6 месяцев (полгода)</option>
+            <option value="12" selected>12 месяцев (год)</option>
+            <option value="18">18 месяцев (1.5 года)</option>
+            <option value="24">24 месяца (2 года)</option>
+            <option value="30">30 месяцев (2.5 года)</option>
+            <option value="36">36 месяцев(3 года)</option>
+            <option value="1200">1200 месяца (100 лет)</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Годовая процентная ставка?</td>
+        <td>
+          <input name="interest" type="number" value="5" required id="interest">
+        </td>
+      </tr>
+    </table>
+
+
+  </form>
+
+
+  <table id="diagram">
+    <tr>
+      <th>Было:</th>
+      <th>Станет:</th>
+    </tr>
+    <tr>
+      <th id="money-before"></th>
+      <th id="money-after"></th>
+    </tr>
+    <td>
+      <div style="background: red;width:40px;height:100px"></div>
+    </td>
+    <td>
+      <div style="background: green;width:40px;height:0" id="height-after"></div>
+    </td>
+  </table>
+
+</div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
